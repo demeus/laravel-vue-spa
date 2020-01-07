@@ -1,0 +1,43 @@
+.casino-list {
+   display: flex;
+    .block-content{
+        flex-direction:column;
+        height: 140px;
+
+        .casino-logo{
+            height: 75%;
+
+            img {
+                align-self: center !important;
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .casino-title{
+            align-self: flex-end!important;
+            color: $white;
+            text-align: center;
+
+            span .title {
+                font-weight: 600;
+            }
+        }
+    }
+}
+.casino-list-ajax {
+   display: flex;
+
+    .block-content{
+        flex-direction:column;
+        height: 80px;
+
+        .casino-title{
+            align-self: flex-end!important;
+            color: $white;
+            text-align: center;
+            span{
+                font-weight: 600;
+            }
+        }
+    }
+}

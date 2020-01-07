@@ -1,16 +1,184 @@
-// // Body
-$body-bg: #f7f9fb;
+$color-black: #212121;
+$color-black-dark: #131313;
+$color-gray: #F0F0F0;
+$color-primary: #3b5999;
+$color-red: #EE5342;
+$color-green: #28a745;
+$color-blue: #3b5999;
+$color-orange: #F78F1E;
 
-// Cards
-$card-spacer-x: 0.9375rem;
-$card-spacer-y: 0.625rem;
-$card-cap-bg: #fbfbfb;
-$card-border-color: #e8eced;
+$font-primary: 'Raleway', Arial, sans-serif;
+$font-secondary: serif;
+$font-family-fontawesome: 'FontAwesome', 'Font Awesome 5 Free', 'Font Awesome 5 Pro';
 
-// Borders
-$border-radius: .125rem;
-$border-radius-lg: .2rem;
-$border-radius-sm: .15rem;
 
-// Nav Pills
-$nav-pills-border-radius: 0;
+$brand-dark: $gray-800 !default;
+$brand-primary: #ff1d47 !default;
+$brand-light: lighten($brand-primary, 15%) !default;
+$brand-lighter: lighten($brand-primary, 30%) !default;
+$brand-dark: $gray-800 !default;
+$brand-darker: $gray-900 !default;
+
+$brand-success: #9ccc65 !default;
+$brand-success-light: #ebf5df !default;
+$brand-info: #26c6da !default;
+$brand-info-light: #e3f4fc !default;
+$brand-warning: #ffca28 !default;
+$brand-warning-light: #fcf7e6 !default;
+$brand-danger: #ef5350 !default;
+$brand-danger-light: #fae9e8 !default;
+$brand-inverse: $brand-dark !default;
+
+$menu-item-padding-horizontal: 25px;
+$menu-item-padding-vertical: 12px;
+$menu-item-padding: 12px 25px;
+$menu-item-padding-horizontal: 25px;
+$menu-item-padding-vertical: 12px;
+$menu-item-padding: 12px 25px;
+
+$menu-children-padding-horizontal: 15px;
+$menu-children-padding-vertical: 6px;
+$menu-children-padding: $menu-children-padding-vertical $menu-children-padding-horizontal $menu-children-padding-vertical ($menu-children-padding-horizontal + 42);
+$menu-children-level1-padding: $menu-children-padding-vertical $menu-children-padding-horizontal $menu-children-padding-vertical ($menu-children-padding-horizontal + 67);
+$menu-children-level2-padding: $menu-children-padding-vertical $menu-children-padding-horizontal $menu-children-padding-vertical ($menu-children-padding-horizontal + 82);
+
+$menu-item-arrow-padding: 14px 25px;
+$menu-item-children-arrow-padding: 6px 25px;
+
+
+//$custom-checkbox-indicator-icon-checked: str-replace(url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='#{$custom-control-indicator-checked-color}' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e"), "#", "%23") !default;
+
+
+// Badges
+
+$badge-font-size: 66% !default;
+$badge-font-weight: $font-weight-bold !default;
+$badge-padding-y:                   .35rem !default;
+$badge-padding-x:                   .375rem !default;
+$badge-border-radius:               $border-radius !default;
+$badge-text-transfom:               uppercase;
+$badge-pill-padding-x:              .875em !default;
+$badge-pill-border-radius:          10rem !default;
+$badge-circle-size:                 2rem !default;
+
+// Icons
+
+$icon-size: 3rem !default;
+$icon-size-xl: 5rem !default;
+$icon-size-lg: 4rem !default;
+$icon-size-sm: 2rem !default;
+
+
+$body-bg:                   #f0f2f5 !default;
+$body-bg-dark:              darken($body-bg, 4%) !default;
+$body-bg-light:             darken($body-bg, 4%) !default;
+
+$body-color:                #575757 !default;
+$body-color-dark:           #171717 !default;
+$body-color-light:          $body-bg-dark !default;
+
+$headings-margin-bottom:    20px !default;
+$headings-font-family:      $font-family-base !default;
+$headings-font-weight:      600 !default;
+$headings-line-height:      1.2 !default;
+$headings-color:            $body-color-dark !default;
+$headings-small-color:      lighten($body-color-dark, 30%) !default;
+
+
+$gray-lighter:              $gray-100 !default;
+$gray-light:                $gray-200 !default;
+$gray:                      $gray-400 !default;
+$gray-dark:                 $gray-600 !default;
+$gray-darker:               $gray-800 !default;
+$darker:        darken($gray-900, 15%) !default;
+
+$font-size-xl:              1.428571429rem !default; // 20px (with 14px base)
+$font-size-lg:              1.285714286rem !default; // 18px (with 14px base)
+$font-size-md:              1.142857143rem !default; // 16px (with 14px base)
+$font-size-sm:              0.928571429rem !default; // 13px (with 14px base)
+$font-size-xs:              0.857142857rem !default; // 12px (with 14px base)
+
+.font-w300 { font-weight: 300 !important; }
+.font-w400 { font-weight: 400 !important; }
+.font-w600 { font-weight: 600 !important; }
+.font-w700 { font-weight: 700 !important; }
+
+
+.font-size-h1 {font-size: 2.571429rem;}
+.font-size-h2 {font-size: 2.142857rem;}
+.font-size-h3 {font-size: 1.857143rem;}
+.font-size-h4 {font-size: 1.571429rem;}
+.font-size-h5 {font-size: 1.285714rem;}
+.font-size-h6 { font-size: 1rem;}
+
+
+$pbf-font-size:             $font-size-base !default;
+$pbf-font-size-sm:          $font-size-base !default;
+$pbf-font-size-lg:          $font-size-md !default;
+
+
+// Sections
+
+$section-colors: () !default;
+$section-colors: map-merge((
+  "primary":      $body-bg,
+  "secondary":    $secondary,
+  "light":        $gray-400,
+  "dark":         $dark,
+  "darker":       $darker
+), $section-colors);
+
+// Translucent color variations
+$translucent-color-opacity: .6 !default;
+
+
+// Layout Spaces
+$space-base:                24px !default;           // Content padding
+$space-mobile:              12px !default;           // Content padding in mobile
+$space-side:                18px !default;           // Content padding in side sections
+$space-row-gutter-tiny:     6px !default;            // Row with tiny gutter, even number: 2, 4, 6.. etc
+$space-block:               20px !default;           // Block padding
+$space-boxed:               1200px !default;         // Boxed content max width
+$space-narrow:              92% !default;            // Narrow content max width
+$space-breaks: (
+  5: (
+    x: 5px,
+    y: 5px
+  ),
+  10: (
+    x: 10px,
+    y: 10px
+  ),
+  15: (
+    x: 15px,
+    y: 15px
+  ),
+  20: (
+    x: 20px,
+    y: 20px
+  ),
+  30: (
+    x: 30px,
+    y: 30px
+  ),
+  50: (
+    x: 50px,
+    y: 50px
+  ),
+  100: (
+    x: 100px,
+    y: 100px
+  ),
+  150: (
+    x: 150px,
+    y: 150px
+  ),
+  200: (
+    x: 200px,
+    y: 200px
+  ),
+  300: (
+    x: 300px,
+    y: 300px
+  )
+) !default;

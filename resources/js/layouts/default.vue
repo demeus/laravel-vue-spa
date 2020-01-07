@@ -1,21 +1,29 @@
 <template>
-  <div class="main-layout">
-    <navbar />
+  <div class="page-wrapper">
+    <sidebar/>
 
-    <div class="container mt-4">
-      <child />
+    <div class="content">
+      <div class="container-fluid">
+        <div class="page-title">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item active">Dashboard</li>
+          </ol>
+          <h2>Dashboard</h2>
+          <div class="page-title-actions"></div>
+        </div>
+        <child/>
+
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import Navbar from '~/components/Navbar'
-
+import Sidebar from '~/components/Sidebar'
 export default {
   name: 'MainLayout',
-
   components: {
-    Navbar
+    Sidebar
   }
 }
 </script>

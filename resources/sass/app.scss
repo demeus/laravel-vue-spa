@@ -1,8 +1,101 @@
-@import 'variables';
-@import '~bootstrap/scss/bootstrap';
-@import '~sweetalert2/src/sweetalert2';
 
-@import 'elements/card';
-@import 'elements/navbar';
-@import 'elements/buttons';
-@import 'elements/transitions';
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Variables
+@import 'variables';
+
+@import 'helpers/mixins';
+
+@import 'helpers/grid';
+@import 'helpers/preloader';
+@import 'helpers/elements';
+@import 'helpers/commons';
+@import 'helpers/forms';
+@import 'helpers/alerts';
+@import 'helpers/pagination';
+@import 'helpers/simple-line-icons';
+@import 'helpers/buttons';
+@import 'helpers/custom-forms';
+
+
+@import 'helpers/badges/badge';
+@import 'helpers/badges/badge-circle';
+@import 'helpers/badges/badge-dot';
+
+
+@import 'helpers/structure';
+@import 'helpers/toolbar';
+@import 'helpers/sidebar';
+@import 'helpers/menu';
+@import 'helpers/page_title';
+@import 'helpers/stat';
+@import 'helpers/block';
+@import 'helpers/structure';
+@import 'helpers/tables';
+@import 'helpers/select2';
+
+@import 'helpers/utilities';
+@import 'helpers/casino';
+@import 'helpers/dropzone';
+@import 'helpers/notify';
+@import 'helpers/icons/icons';
+
+
+.text-primary {
+  color: $color-primary !important;
+}
+
+#app{
+  .content {
+    min-height: 100vh;
+    width: 100%;
+  }
+}
+
+.sortable {
+  tr td:first-child {
+    cursor: move;
+  }
+}
+
+.datepicker, .timepicker, .flatpickr-input {
+  background-color: #fff !important;
+}
+
+.display-flex {
+  display: flex;
+}
+
+fieldset{
+  .btn:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+}
+
+.completed{
+  text-decoration: line-through;
+}
+
+.casino {
+  width: 150px;
+}
+
+.text-body-bg-dark {
+  color: #e4e7ed !important;
+}
+
+
+@media only screen and (max-width: 1300px) {
+  .dataTable tr td .btn-group span {
+    display: none;
+  }
+}
+
+.animated-icon {
+  &:hover {
+    color: $color-red;
+  }
+}
+
+

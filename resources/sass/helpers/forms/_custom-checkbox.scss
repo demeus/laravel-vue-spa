@@ -1,0 +1,57 @@
+//
+// Custom checkbox
+//
+
+.custom-checkbox {
+
+    .custom-control-input ~ .custom-control-label {
+        cursor: pointer;
+        font-size: $font-size-sm;
+    }
+
+    .custom-control-input {
+        &:checked {
+            ~ .custom-control-label {
+                &::before {
+                    background-color: $color-primary;
+                    border-color: $color-primary;
+                }
+
+                //&::after {
+                //    background-image: $custom-checkbox-indicator-icon-checked;
+                //}
+            }
+        }
+
+        &:disabled {
+            ~ .custom-control-label {
+                &::before {
+                    border-color: $custom-control-indicator-disabled-bg;
+                }
+            }
+
+            &:checked {
+                &::before {
+                    border-color: $custom-control-indicator-checked-disabled-bg;
+                }
+            }
+        }
+    }
+}
+.custom-control-label {
+    span {
+        position: relative;
+        top: 2px;
+    }
+    &::before,  &::after {
+        position: absolute;
+        top: .125rem;
+        left: -1.75rem;
+        display: block;
+        width: 1.25rem;
+        height: 1.25rem;
+        content: "";
+    }
+
+
+}

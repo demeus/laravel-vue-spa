@@ -1,0 +1,15 @@
+//
+// Mixins
+// --------------------------------------------------
+
+// Codebase mixins and Bootstrap overrides
+
+
+@import "../../../node_modules/bootstrap/scss/mixins";
+
+@import 'mixins/buttons';
+@import 'mixins/content';
+@import 'mixins/forms';
+@import 'mixins/icon';
+@import 'mixins/background-variant';
+

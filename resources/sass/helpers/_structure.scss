@@ -1,0 +1,57 @@
+.auth-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    overflow-x: hidden;
+    width: 100%;
+
+    .page-center & {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+.page-wrapper {
+  display: flex;
+  flex-direction: row;
+  min-height: 100%;
+}
+
+.main {
+    //flex-grow: 1;
+    display: table;
+    min-height: 100vh;
+    table-layout: fixed;
+    overflow: hidden;
+    width: 100%;
+}
+
+.content {
+  > .container-fluid {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.main-wrapper {
+    flex-grow: 1;
+
+    .page-center & {
+        flex-grow: initial;
+
+        @include media-breakpoint-up(md) {
+            width: 500px;
+        }
+    }
+
+    &.fullwidth {
+        display: flex;
+        flex-direction: row;
+
+        .content {
+            padding: 0 15px;
+            flex-grow: 1;
+        }
+    }
+}
